@@ -10,6 +10,8 @@ import com.example.demo.entity.Location;
 @RestController
 public class LocationController {
 
+    @
+
     @PostMapping("/locations")
     public Location addLocations(@RequestBody Location loc) {
         return loc;
