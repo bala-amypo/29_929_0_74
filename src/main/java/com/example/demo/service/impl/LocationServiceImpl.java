@@ -17,7 +17,9 @@ public class LocationServiceImpl implements LocationService {
 
     @Override
     public Location createLocation(Location location) {
-        return location;
+        if(location.getLatitude() > 90)
+            throw new IllegalArgumentException("latitude");
+        return lrp.save(location);
     }
 
     @Override
