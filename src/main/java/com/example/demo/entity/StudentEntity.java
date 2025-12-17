@@ -5,10 +5,11 @@ import java.util.Date;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
+
 @Entity
 public class StudentEntity {
     @Id
-    @GeneratedV
+    @GeneratedValue
     private Integer id;
     private String username;
     private String email;
